@@ -10,6 +10,6 @@ class Collection extends Model
     use HasFactory;
 
     protected $fillable = [
-        'judul', 'gambar', 'uploader'
+        'judul', 'gambar', 'uploader','deskripsi'
     ];
 }

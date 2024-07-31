@@ -1,0 +1,5 @@
+const Ziggy = {"url":"http:\/\/localhost","port":null,"defaults":{},"routes":{"ignition.healthCheck":{"uri":"_ignition\/health-check","methods":["GET","HEAD"]},"ignition.executeSolution":{"uri":"_ignition\/execute-solution","methods":["POST"]},"ignition.updateConfig":{"uri":"_ignition\/update-config","methods":["POST"]},"items.index":{"uri":"items","methods":["GET","HEAD"]},"items.create":{"uri":"items\/create","methods":["GET","HEAD"]},"items.store":{"uri":"items","methods":["POST"]},"items.show":{"uri":"items\/{item}","methods":["GET","HEAD"],"parameters":["item"],"bindings":{"item":"id"}},"items.edit":{"uri":"items\/{item}\/edit","methods":["GET","HEAD"],"parameters":["item"],"bindings":{"item":"id"}},"items.update":{"uri":"items\/{item}","methods":["PUT","PATCH"],"parameters":["item"],"bindings":{"item":"id"}},"items.destroy":{"uri":"items\/{item}","methods":["DELETE"],"parameters":["item"],"bindings":{"item":"id"}}}};
+if (typeof window !== 'undefined' && typeof window.Ziggy !== 'undefined') {
+  Object.assign(Ziggy.routes, window.Ziggy.routes);
+}
+export { Ziggy };
